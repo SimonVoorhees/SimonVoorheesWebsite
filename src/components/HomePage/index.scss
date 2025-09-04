@@ -9,7 +9,6 @@
   &_TextBlock {
     background-color: rgba($color-primary-1, 0.75);
     color: $color-primary-0;
-    border-radius: 15px;
     padding: 25px 30px;
     font-size: 20px;
     font-weight: 500;
@@ -40,7 +39,10 @@
     height: 60px;
     width: 100%;
   }
-  @media only screen and (min-width: $mobileBreakpoint) {
+  @media only screen and (min-width: $tabletBreakpoint) {
     min-height: 100vh;
+    &_TextBlock {
+      border-radius: 15px;
+    }
   }
 }
