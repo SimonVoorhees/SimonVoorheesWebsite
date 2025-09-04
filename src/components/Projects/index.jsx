@@ -45,6 +45,7 @@ export const Projects = () => {
           </li>
         </ul>
       </div>
+      <div className="Projects_Gradient"/>
     </section>
   );
 };

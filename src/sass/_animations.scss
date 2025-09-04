@@ -1,0 +1,40 @@
+@mixin ReadMore_Animation_Mixin() {
+  @keyframes ReadMore {
+    0% {
+      display: none;
+    }
+    1% {
+      height: 10px;
+      overflow: hidden;
+    }
+    50% {
+      height: 30%;
+      overflow: visible;
+    }
+    90% {
+      height: 95%;
+    }
+    100% {
+      height: 100%;
+    }
+  }
+}
+@keyframes ReadMore {
+  0% {
+    display: none;
+  }
+  1% {
+    height: 10px;
+    overflow: hidden;
+  }
+  50% {
+    height: 30%;
+    overflow: visible;
+  }
+  90% {
+    height: 95%;
+  }
+  100% {
+    height: 100%;
+  }
+}

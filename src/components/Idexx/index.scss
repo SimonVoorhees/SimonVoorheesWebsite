@@ -1,0 +1,54 @@
+@import "../../sass/variables";
+@import "../../sass/animations";
+.Idexx {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-Idexx-White;
+  &_TextBlock {
+    margin: 10px;
+    background-color: $color-primary-4;
+    color: $color-primary-1;
+    border-radius: 15px;
+    padding: 10px;
+    max-width: $HomeMaxWidth;
+    font-size: 20px;
+  }
+  &_Summary {
+    font-weight: bold;
+  }
+  &_Paragraph {
+    height: 10px;
+    overflow: hidden;
+    animation-name: ReadMore;
+    animation-duration: 3s;
+    animation-delay: 0.3s;
+  }
+  &_Logo {
+    display: none;
+  }
+  &_ReadMore {
+    margin-bottom: 5px;
+  }
+  @media only screen and (min-width: $mobileBreakpoint) {
+    min-height: 100vh;
+
+    &_TextBlock {
+      margin: 20px 0 20px 50px;
+      padding: 25px 30px;
+    }
+    &_Summary {
+      font-size: 26px;
+    }
+    &_Logo {
+      display: block;
+      border-radius: 15px;
+      padding: 10px;
+      margin: 0 50px;
+      max-width: 400px;
+      max-height: 400px;
+    }
+  }
+}

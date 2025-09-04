@@ -5,6 +5,7 @@
   background-color: $color-primary-2;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   &_Title {
     justify-self: flex-start;
     font-size: 40px;
@@ -20,6 +21,7 @@
     max-width: $HomeMaxWidth;
     display: flex;
     flex-direction: column;
+    margin: auto;
   }
   &_Links {
     font-size: 24px;
@@ -52,10 +54,15 @@
     margin: 0;
     font-weight: bold;
   }
+  
+  &_Gradient {
+    background-image: linear-gradient($color-primary-2, $color-RIT-Orange);
+    height: 60px;
+    width: 100%;
+  }
   @media only screen and (min-width: $mobileBreakpoint) {
     min-height: 100vh;
     &_TextBlock {
-      margin: 0 0 0 50px;
       padding: 25px 30px;
       height: initial;
     }

@@ -9,7 +9,9 @@ import { Navlink } from "./components/Navlink";
 import { HomePage } from "./components/HomePage";
 import { Projects } from "./components/Projects";
 import { Footer } from "./components/Footer";
+import { Idexx } from "./components/Idexx";
 import "./App.scss";
+import { Experience } from "./components/Experience";
 
 function App() {
   return (
@@ -19,9 +21,8 @@ function App() {
       {/* Overview */}
       {/* <Bio /> */}
       <HomePage />
+      <Experience />
       <Projects />
-      {/* Rightpoint */}
-      <Rightpoint />
       {/* Education */}
       <RIT />
       <Footer />      
