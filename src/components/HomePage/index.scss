@@ -1,19 +1,22 @@
 @import "../../sass/variables";
 .HomePage {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: $color-primary-1;
-  padding: 10px;
+  flex-direction: column;
+  background-image: url("Boston_Background.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
   &_TextBlock {
+    background-color: rgba($color-primary-1, 0.75);
     color: $color-primary-0;
     border-radius: 15px;
     padding: 25px 30px;
     font-size: 20px;
     font-weight: 500;
     max-width: $HomeMaxWidth;
+    margin: auto;
   }
-  &_Links{
+  &_Links {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -31,6 +34,11 @@
     &:hover {
       color: $color-primary-2;
     }
+  }
+  &_Gradient {
+    background-image: linear-gradient($color-primary-1, $color-primary-0);
+    height: 60px;
+    width: 100%;
   }
   @media only screen and (min-width: $mobileBreakpoint) {
     min-height: 100vh;

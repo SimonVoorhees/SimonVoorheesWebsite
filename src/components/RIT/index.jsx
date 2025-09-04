@@ -17,9 +17,8 @@ export const RIT = () => {
       <div className="RIT_TextBlock">
       <h2 className="RIT_Title">RIT</h2>
         <h2 className="RIT_Summary">
-          I attended RIT from 2014-2018 before taking some time off to get a
-          coop. I finished my degree in Game Design and Development and
-          graduated in 2020
+          I attended RIT from 2014-2018. After completing my coop I received the last credits I needed. I finished my degree in Game Design and Development and
+          graduated in May 2020.
         </h2>
         {hideParagraph ? (
           ""
